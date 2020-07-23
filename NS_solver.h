@@ -482,9 +482,9 @@ BC_in();
 					fzdf=(dt/(dx*dy*dz*Re*rho[i][j][k]))*(aw_nav*viscw*w[i-1][j][k]+ae_nav*visce*w[i+1][j][k]+as_nav*viscs*w[i][j-1][k]+an_nav*viscn*w[i][j+1][k]+ab_nav*viscb*w[i][j][k-1]+at_nav*visct*w[i][j][k+1]);
 
 //_______________________________Inter__________________________________________________//
-					fxad1=((dt/dx)*(uwa1*uw-uea1*ue)+(dt/dy)*(usa1*vs-una1*vn)+(dt/dz)*(uba1*wb-uta1*wt));	// X-Advection
-					fyad1=((dt/dx)*(vwa1*uw-vea1*ue)+(dt/dy)*(vsa1*vs-vna1*vn)+(dt/dz)*(vba1*wb-vta1*wt));	// Y-Advection
-					fzad1=((dt/dx)*(wwa1*uw-wea1*ue)+(dt/dy)*(wsa1*vs-wna1*vn)+(dt/dz)*(wba1*wb-wta1*wt));	// Z-Advection
+					fxad1=((dt/dx)*(uwa1*uw1-uea1*ue1)+(dt/dy)*(usa1*vs1-una1*vn1)+(dt/dz)*(uba1*wb1-uta1*wt1));	// X-Advection
+					fyad1=((dt/dx)*(vwa1*uw1-vea1*ue1)+(dt/dy)*(vsa1*vs1-vna1*vn1)+(dt/dz)*(vba1*wb1-vta1*wt1));	// Y-Advection
+					fzad1=((dt/dx)*(wwa1*uw1-wea1*ue1)+(dt/dy)*(wsa1*vs1-wna1*vn1)+(dt/dz)*(wba1*wb1-wta1*wt1));	// Z-Advection
 
 					// X-Diffusion
 					fxdf1=(dt/(dx*dy*dz*Re*rho[i][j][k]))*(aw_nav*viscw*u1[i-1][j][k]+ae_nav*visce*u1[i+1][j][k]+as_nav*viscs*u1[i][j-1][k]+an_nav*viscn*u1[i][j+1][k]+ab_nav*viscb*u1[i][j][k-1]+at_nav*visct*u1[i][j][k+1]);
